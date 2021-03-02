@@ -99,7 +99,7 @@ img {
 }
 
 .hero {
-  background: url("../../images/sect1/hero_bg.png") center/cover;
+  background: url("/images/sect1/hero_bg.png") center/cover;
   height: 100vh;
   min-height: 36.11111rem;
   font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
