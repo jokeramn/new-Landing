@@ -1,0 +1,75 @@
+.projects-container {
+  max-width: 100vw;
+}
+
+.projects__slider {
+  display: flex;
+}
+
+.projects__item {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+    z-index: 5;
+    transform: scale(1.2);
+  }
+}
+
+.projects__photo {
+  width: rem(440px);
+  height: rem(550px);
+}
+
+.projects__text--horizont {
+  font-size: rem(24px);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: absolute;
+  top: rem(20px);
+  left: rem(20px);
+}
+
+.projects__text--vetical {
+  font-weight: bold;
+  font-size: rem(18px);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: rem(20px);
+  left: rem(20px);
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+}
+
+.projects__item.active::before {
+  position: absolute;
+  content: url("../../images/sect3/zoom.png");
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  z-index: 20;
+}
+
+.projects__item.active::after {
+  position: absolute;
+  content: "";
+  width: rem(100px);
+  height: rem(100px);
+  display: block;
+  border-radius: 50%;
+  background-color: #d1a954;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.projects__item.active .projects__text--horizont {
+  display: none;
+}
+
+.projects__item.active .projects__text--vetical {
+  display: none;
+}

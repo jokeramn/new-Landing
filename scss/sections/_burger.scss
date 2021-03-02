@@ -1,0 +1,38 @@
+.burger {
+  position: fixed;
+  top: rem(60px);
+  left: 3%;
+  transform: translateY(50%);
+  opacity: 0;
+  visibility: hidden;
+
+  @include phones {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.line {
+  width: 15px;
+  background-color: #fff;
+  height: 2px;
+  position: relative;
+}
+
+.line::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+  bottom: -7px;
+}
+
+.line::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  bottom: 7px;
+}

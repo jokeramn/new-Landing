@@ -1,0 +1,59 @@
+.awards {
+  background: url("../../images/sect4/sect4_bg.png") center no-repeat;
+  background-color: #333;
+}
+
+.awards__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.awards__years {
+  // margin-right: 5%;
+
+  @include tablets {
+    // margin-right: 3%;
+  }
+}
+
+.years__list {
+  display: flex;
+  flex-direction: column;
+  color: #d1a954;
+  font-size: rem(72px);
+  line-height: rem(98px);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.awards__opinion {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  margin-left: 16%;
+
+  @include tablets {
+    max-width: 64%;
+    margin-left: 15%;
+  }
+}
+
+.stars__list {
+  display: flex;
+}
+
+.stars__item:not(:last-child) {
+  margin-right: rem(25px);
+}
+
+.awards__opinion-text {
+  font-weight: bold;
+  font-size: rem(36px);
+  line-height: 150%;
+
+  @include tablets {
+    padding-right: 5%;
+  }
+}

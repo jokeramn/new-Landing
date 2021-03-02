@@ -1,0 +1,41 @@
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include tablets {
+    justify-content: normal;
+  }
+}
+
+.partners__item {
+  margin-left: rem(50px);
+
+  @include tablets {
+    margin-left: 0;
+  }
+}
+
+.partners__item:nth-child(4n+1) {
+  margin-left: 0;
+}
+
+.partners__link {
+  width: rem(200px);
+  height: rem(90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(100%);
+  transition: .4s ease;
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
+
+.partners__img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

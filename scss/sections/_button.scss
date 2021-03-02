@@ -1,0 +1,29 @@
+.btn {
+  padding: rem(13px) rem(51px);
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  // max-height: rem(50px);
+
+  &-theme--yellow {
+    background-color: #d1a954;
+    color: $mainColor;
+    transition: 0.3s ease;
+  }
+
+  &:hover {
+    color: #d1a954;
+    background-color: $mainColor;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

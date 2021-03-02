@@ -1,0 +1,71 @@
+.overlay {
+  position: fixed;
+  width: 40%;
+  left: 0;
+  height: 100%;
+  top: 0;
+  background: #333333;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay-menu {
+  font-weight: bold;
+  font-size: rem(24px);
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: rem(90px);
+}
+
+.overlay-menu__item:not(:last-child) {
+  margin-bottom: rem(25px);
+}
+
+.overlay-socials__list {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.overlay-socials__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: rem(50px);
+  }
+}
+
+.overlay-socials__item:not(:first-child) {
+  margin-top: 0;
+}
+
+.overlay-socials__link:not(:last-child) {
+  margin-right: rem(35px);
+}
+
+.overlay-socials__icons {
+  width: rem(45px);
+  height: rem(45px);
+  fill: #fff;
+}
+
+.overlay-close {
+  position: absolute;
+  top: rem(30px);
+  right: rem(30px);
+}
+
+.overlay--active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+
+.body--active-menu {
+  overflow: hidden;
+}

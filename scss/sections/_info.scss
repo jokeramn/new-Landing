@@ -1,0 +1,59 @@
+.info {
+  background: rgba(51, 51, 51, 0.75);
+  z-index: 50;
+  padding: rem(80px) rem(60px);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items:center;
+
+  @include phones {
+    display: none;
+  }
+}
+
+.info__contacts{
+  margin-top: rem(40px);
+}
+
+.socials__list {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.socials__item:not(:first-child) {
+  margin-top: rem(25px);
+}
+
+.socials__icons {
+  width: rem(26px);
+  height: rem(26px);
+  fill: rgba(255, 255, 255, 0.6);
+
+  &:hover {
+    fill: #d1a954;
+    transition: 0.3s ease-in;
+  }
+}
+
+.info__strip {
+  height: rem(80px);
+  width: rem(2px);
+  background-color: #C4C4C4;
+  margin-top: rem(40px);
+}
+
+.info__text {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #c4c4c4;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg) ;
+}

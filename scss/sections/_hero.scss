@@ -1,0 +1,124 @@
+.hero {
+  background: url("../../images/sect1/hero_bg.png") center/cover;
+  height: 100vh;
+  min-height: rem(650px);
+  font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40%;
+}
+
+.hero__desc {
+  max-width: 48.5%;
+
+  @include tablets {
+    max-width: 85.5%;
+  }
+
+  @include phones {
+    max-width: 100%;
+  }
+}
+
+.hero__desc-title {
+  font-size: rem(64px);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: rem(20px);
+}
+
+.hero__desc-about p {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: rem(14px);
+  line-height: 150%;
+  margin-bottom: 8%;
+
+  @include phones {
+    padding-right: 27%;
+  }
+
+  @include phonesSmaller {
+    padding: 0;
+  }
+}
+
+.hero__posters {
+  margin-right: 7%;
+  position: relative;
+  z-index: 1;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.hero__posters-icon {
+  margin-top: 45%;
+  margin-bottom: 15%;
+}
+
+.hero__posters-icon::after {
+  position: absolute;
+  content: url("../../images/sect1/post2.png");
+  max-width: 100%;
+  top: rem(180px);
+  left: rem(20px);
+  z-index: -1;
+}
+
+.hero__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c4c4c4;
+  position: relative;
+}
+
+.hero__nav-direct {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hero__nav-direct--absolute {
+  right: rem(-20px);
+  position: absolute;
+}
+
+.hero__nav-arrow {
+  width: rem(40px);
+  height: rem(20px);
+  fill: #c4c4c4;
+  fill-opacity: 0.6;
+  margin-right: rem(25px);
+}
+
+.hero__nav-arrow--right {
+  transform: rotate(180deg);
+  margin-right: 0;
+  margin-left: rem(25px);
+}
+
+.hero__nav-direct.active {
+  color: #fff;
+}
+
+.hero__nav-direct.active .hero__nav-arrow {
+  fill: #fff;
+  fill-opacity: 1;
+}

@@ -1,0 +1,53 @@
+.contacts {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column-reverse;
+  }
+}
+
+.contacts__text {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: rem(16px);
+  line-height: rem(22px);
+  letter-spacing: 0.05em;
+  flex: 1;
+  text-transform: uppercase;
+
+  @include tablets {
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+}
+
+.contacts__part {
+  display: flex;
+  flex-direction: column;
+
+  @include tablets {
+    align-items: flex-end;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 5%;
+
+    @include tablets {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contacts__text-info {
+  font-style: normal;
+}
+
+.contacts__text-info:not(:last-child) {
+  margin-bottom: 5%;
+
+  @include tablets {
+    margin-bottom: 0;
+  }
+}
