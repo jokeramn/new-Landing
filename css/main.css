@@ -195,7 +195,7 @@ img {
 
 .hero__posters-icon::after {
   position: absolute;
-  content: url("../../images/sect1/post2.png");
+  content: url("../images/sect1/post2.png");
   max-width: 100%;
   top: 10rem;
   left: 1.11111rem;
@@ -661,7 +661,7 @@ img {
 
 .projects__item.active::before {
   position: absolute;
-  content: url("../../images/sect3/zoom.png");
+  content: url("../images/sect3/zoom.png");
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -692,7 +692,7 @@ img {
 }
 
 .awards {
-  background: url("../../images/sect4/sect4_bg.png") center no-repeat;
+  background: url("../images/sect4/sect4_bg.png") center no-repeat;
   background-color: #333;
 }
 
