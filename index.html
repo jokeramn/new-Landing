@@ -12,16 +12,16 @@
 <body>
   <div class="wrapper">
     <div class="main-content">
-      <section class="hero">
+      <section class="hero" id="main">
         <div class="container hero-container">
           <header class="header">
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item"><a href="#" class="menu__link">главная</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">о театре</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">наши постановки</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">партнеры театра</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
+                <li class="menu__item"><a href="#main" class="menu__link">главная</a></li>
+                <li class="menu__item"><a href="#theater" class="menu__link">о театре</a></li>
+                <li class="menu__item"><a href="#compositions" class="menu__link">наши постановки</a></li>
+                <li class="menu__item"><a href="#partners" class="menu__link">партнеры театра</a></li>
+                <li class="menu__item"><a href="#contacts" class="menu__link">контакты</a></li>
               </ul>
             </nav>
             <a href="tel:+74951234567" class="menu__link-number">+7 495
@@ -35,7 +35,7 @@
                   консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших
                   театральных зданий в Европе XVIII.</p>
               </div>
-              <button href="#" class="btn btn-theme--yellow">афиша</button>
+              <button class="btn btn-theme--yellow">афиша</button>
             </div>
             <div class="hero__posters">
               <div class="hero__posters-icon">
@@ -97,7 +97,7 @@
           </div>
         </aside>
       </section>
-      <section class="section">
+      <section class="section" id="theater">
         <div class="container">
           <h2 class="section__title"><span class="section__title--yellow">о</span> театре</h2>
           <div class="benefits">
@@ -149,7 +149,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="compositions">
         <div class="container projects-container">
           <h2 class="section__title"><span class="section__title--yellow">наши</span> постановки</h2>
           <ul class="projects__slider">
@@ -210,7 +210,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="partners">
         <div class="container">
           <h2 class="section__title">
             <span class="section__title--yellow">партнеры</span> театра
@@ -235,7 +235,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="contacts">
         <div class="container">
           <h2 class="section__title">
             <span class="section__title--yellow">стать</span> меценатом
@@ -272,7 +272,7 @@
                   * Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и
                   защищаем персональные данные согласно законку ФЗ-52.
                 </div>
-                <button href="#" class="btn btn-theme--yellow btn--size">отправить</button>
+                <button class="btn btn-theme--yellow btn--size">отправить</button>
               </div>
             </form>
           </div>
@@ -299,11 +299,11 @@
   <div class="overlay" id="overlay">
     <nav class="overlay-menu">
       <ul class="overlay-menu__list">
-        <li class="overlay-menu__item"><a href="#" class="overlay-menu__link">Главная</a></li>
-        <li class="overlay-menu__item"><a href="#" class="overlay-menu__link">о театре</a></li>
-        <li class="overlay-menu__item"><a href="#" class="overlay-menu__link">Наши постановки</a></li>
-        <li class="overlay-menu__item"><a href="#" class="overlay-menu__link">партнеры театра</a></li>
-        <li class="overlay-menu__item"><a href="#" class="overlay-menu__link">контакты</a></li>
+        <li class="overlay-menu__item"><a href="#main" class="overlay-menu__link">Главная</a></li>
+        <li class="overlay-menu__item"><a href="#theater" class="overlay-menu__link">о театре</a></li>
+        <li class="overlay-menu__item"><a href="#compositions" class="overlay-menu__link">Наши постановки</a></li>
+        <li class="overlay-menu__item"><a href="#partners" class="overlay-menu__link">партнеры театра</a></li>
+        <li class="overlay-menu__item"><a href="#contacts" class="overlay-menu__link">контакты</a></li>
       </ul>
     </nav>
     <ul class="socials__list overlay-socials__list">
@@ -336,7 +336,7 @@
       <img src="images/sect1/close.png" alt="close" class="overlay-close__img">
     </div>
   </div>
-  
+
   <script src="js/close.js"></script>
 </body>
 
